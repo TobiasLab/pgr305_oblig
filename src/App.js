@@ -2,11 +2,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import React from 'react';
-import { Navbar } from 'react-bootstrap';
-import { Nav } from 'react-bootstrap';
-import { Container } from 'react-bootstrap';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/container';
 import Customers from './components/Customers';
-import Employees from './components/Employees';
+import Employees from './pages/Employees';
 import Projects from './components/Projects';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -32,10 +32,10 @@ function App() {
                 <main>
                     <Switch>
                         <Route exact path="/" component={Home}></Route>
-                        <Route exact path="/customers" component={Customers}></Route>
-                        <Route exact path="/employees" component={Employees}></Route>
-                        <Route exact path="/projects" component={Projects}></Route>
-                        <Route exact path="/about" component={About}></Route>
+                        <Route path="/customers" component={Customers}></Route>
+                        <Route path="/employees" component={Employees}></Route>
+                        <Route path="/projects" component={Projects}></Route>
+                        <Route path="/about" component={About}></Route>
                     </Switch>
                 </main>
             </Container>
