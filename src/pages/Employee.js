@@ -11,11 +11,9 @@ const Employee = () => {
     return (
         <Row>
             <Col>
-                <section>
-                    <li>
-                        <Employees />
-                    </li>
-                </section>
+                <main>
+                    <Employees />
+                </main>
             </Col>
         </Row>
     );

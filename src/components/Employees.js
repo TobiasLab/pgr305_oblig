@@ -34,7 +34,7 @@ const Employees = () => {
         <BrowserRouter>
             <Row>
                 <Col>
-                    <h3>Employees</h3>
+                    <h1>Employees</h1>
 
                     <nav>
                         <ul>

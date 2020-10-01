@@ -12,10 +12,12 @@ const EmployeesDetails = (props) => {
     let getUsers = () => {
         return props.projectData.Projects.map((user, i) => {
             return (
-                <Col key={`e-${i}`} xl={12} className="mb-2">
-                    <article>
-                        <h3>{user}</h3>
-                    </article>
+                <Col key={`e-${i}`} xl={12} className="mb-0">
+                    <nav>
+                        <ul>
+                            <li>{user}</li>
+                        </ul>
+                    </nav>
                 </Col>
             )
         });
@@ -24,7 +26,9 @@ const EmployeesDetails = (props) => {
 
     return (
         <Row>
-            <h3>{props.data[props.state].Name + "'s"} current projects</h3>
+            <Col>
+                <h3>{props.data[props.state].Name + "'s"} current projects</h3>
+            </Col>
             {getUsers()}
         </Row>
     );
