@@ -46,7 +46,7 @@ const Employees = () => {
 
                     <Switch>
                         <Route path={`${path}/EmployeesDetails`}>
-                            <EmployeeDetails data={users[userIndex]} />
+                            <EmployeeDetails data={users} projectData={users[userIndex]} state={userIndex} />
                         </Route>
                     </Switch>
                 </Col>
