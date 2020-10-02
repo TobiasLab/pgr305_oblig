@@ -7,7 +7,8 @@ const Home = () => {
         <Row>
             <Col>
                 <section>
-                    <h3>I don't know what to write here yet lmao</h3>
+                    <h3>Home Page</h3>
+                    <p>UI Framworks and web development tools for developers love</p>
                 </section>
             </Col>
         </Row>

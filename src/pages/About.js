@@ -8,7 +8,7 @@ const About = () => {
             <Col>
                 <section>
                     <h3>About us</h3>
-                    <p>Nothing to write here yet</p>
+                    <p>We help develop web solutions for the future</p>
                 </section>
             </Col>
         </Row>
