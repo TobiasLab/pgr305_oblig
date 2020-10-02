@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 
 const Projects = () => {
 
@@ -58,7 +59,7 @@ const Projects = () => {
     let getProjects = () => {
         return projects.map((project, i) => {
             return (
-                <Col key={`e-${i}`} xl={12}>
+                <Col key={`e-${i}`} xl={12} className="mb-1">
                     <nav>
                         <ul>
                             <li>
@@ -73,33 +74,39 @@ const Projects = () => {
     }
 
     return (
-        <Row>
-            <Col>
-                <h2>Current Project</h2>
-            </Col>
-            {getProjects()}
-            <Col>
-                <section>
-                    <input
-                        type="text"
-                        placeholder="Enter new project name"
-                        name="Name"
-                        onChange={handleChangeName}
-                    />
-                    <input
-                        type="text"
-                        placeholder="Enter new project owner"
-                        name="Owner"
-                        onChange={handleChangeOwner}
-                    />
-                    <input
-                        type="button"
-                        onClick={handleClick}
-                        value="Add new projects"
-                    />
-                </section>
-            </Col>
-        </Row>
+        <Container>
+            <Row>
+                <Col>
+                    <h2>Current Projects</h2>
+                </Col>
+                <Col>
+                    <h2>Add new project</h2>
+                    <section>
+                        <input
+                            type="text"
+                            placeholder="Enter new project name"
+                            name="Name"
+                            onChange={handleChangeName}
+                        />
+                        <input
+                            type="text"
+                            placeholder="Enter new project owner"
+                            name="Owner"
+                            onChange={handleChangeOwner}
+                        />
+                        <input
+                            type="button"
+                            onClick={handleClick}
+                            value="Add new projects"
+                            className="btn btn-success"
+                        />
+                    </section>
+                </Col>
+            </Row>
+            <Row>
+                {getProjects()}
+            </Row>
+        </Container>
     );
 }
 

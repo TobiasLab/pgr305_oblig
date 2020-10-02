@@ -8,7 +8,7 @@ const Home = () => {
             <Col>
                 <section>
                     <h3>Home Page</h3>
-                    <p>UI Framworks and web development tools for developers love</p>
+                    <p>UI Framworks and web development tools that developers love</p>
                 </section>
             </Col>
         </Row>

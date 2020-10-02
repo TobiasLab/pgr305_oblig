@@ -4,8 +4,6 @@ import Col from 'react-bootstrap/Col';
 
 import Employees from '../components/Employees';
 
-import { BrowserRouter, Switch, Route, Link, useRouteMatch } from 'react-router-dom';
-
 const Employee = () => {
 
     return (

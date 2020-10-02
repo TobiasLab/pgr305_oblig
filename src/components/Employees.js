@@ -16,17 +16,17 @@ const Employees = () => {
         {
             Name: "Christian",
             Age: 21,
-            Projects: ["Test1", "Test2"]
+            Projects: ["Microsoft Project", "ExpressVPN Project"]
         },
         {
             Name: "Edwin",
             Age: 21,
-            Projects: ["Test3", "Test4"]
+            Projects: ["LG Project", "BenQ Project"]
         },
         {
             Name: "Tobias",
             Age: 24,
-            Projects: ["Test5", "Test6"]
+            Projects: ["IBM Project", "Xiaomi Project"]
         }
     ];
 
